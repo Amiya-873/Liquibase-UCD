@@ -1,9 +1,9 @@
-/**
- * © Copyright IBM Corporation 2014.
- * This is licensed under the following license.
- * The Eclipse Public 1.0 License (http://www.eclipse.org/legal/epl-v10.html)
- * U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
- */
+ /**
+  * (c) Copyright IBM Corporation 2014, 2017.
+  * This is licensed under the following license.
+  * The Eclipse Public 1.0 License (http://www.eclipse.org/legal/epl-v10.html)
+  * U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+  */
 
 import com.urbancode.air.AirPluginTool
 
@@ -20,18 +20,15 @@ def jdbcURL = props['jdbcURL']
 def username = props['username']
 def password = props['password']
 def changeLogFile = props['changeLogFile']
-def tag = props['tag']
 
-
-def lqcmd = command + " " 
-lqcmd = lqcmd + "--driver=" + driver + " " 
-lqcmd = lqcmd + "--classpath=" + driverClasspath + " " 
-lqcmd = lqcmd + " --url=" + jdbcURL + " " 
-lqcmd = lqcmd + "--username=" + username + " " 
-lqcmd = lqcmd + "--password=" + password + " " 
+def lqcmd = command + " "
+lqcmd = lqcmd + "--driver=" + driver + " "
+lqcmd = lqcmd + "--classpath=" + driverClasspath + " "
+lqcmd = lqcmd + " --url=" + jdbcURL + " "
+lqcmd = lqcmd + "--username=" + username + " "
+lqcmd = lqcmd + "--password=" + password + " "
 lqcmd = lqcmd + "--changeLogFile=" + changeLogFile + " "
-lqcmd = lqcmd + "tag "
-lqcmd = lqcmd + tag 
+lqcmd = lqcmd + "chnageLogSync"
 
 println lqcmd
 

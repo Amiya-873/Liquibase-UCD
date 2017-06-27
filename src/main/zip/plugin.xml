@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ - (c) Copyright IBM Corporation 2014, 2017.
+ - This is licensed under the following license.
+ - The Eclipse Public 1.0 License (http://www.eclipse.org/legal/epl-v10.html)
+ - U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
 <plugin xmlns="http://www.urbancode.com/PluginXMLSchema_v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<header>
-		<identifier id="com.urbancode.air.plugin.Liquibase" version="1" name="Liquibase"/>
+		<identifier id="com.urbancode.air.plugin.Liquibase" version="2" name="Liquibase"/>
 		<description>The Liquibase plugin allows you to automate the use of the Liquibase tool within your deploy processes</description>
 		<tag>Database/Liquibase</tag>
 	</header>
