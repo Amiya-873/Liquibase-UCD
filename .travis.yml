@@ -7,7 +7,7 @@ before_script:
 - gradle test
 - export TRAVIS_COMMIT=${TRAVIS_COMMIT:0:7}
 script:
-- gradle -Ptravis_commit=${TRAVIS_COMMIT}
+- gradle -PtravisCommit=${TRAVIS_COMMIT}
 jdk:
 - oraclejdk8
 - oraclejdk7
