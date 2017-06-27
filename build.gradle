@@ -35,6 +35,8 @@
  * }
  */
 
+import org.apache.tools.ant.filters.ReplaceTokens
+
 def pluginName="liquibase-open"
 
 apply plugin: 'groovy'
@@ -125,8 +127,12 @@ task copyi18n(type: Copy) {
 }
 
 task distPlugin(type: Zip, dependsOn: ['compileGroovy', 'gatherI18n']) {
-    from(sourceSets.zip.groovy.srcDirs)
 
+    from(sourceSets.zip.groovy.srcDirs) {
+        if (travisCommit) {
+            filter(ReplaceTokens, tokens: [RELEASE_VERSION: travisCommit])
+        }
+    }
     into('lib') {
         from copyDeps
         exclude 'i18n-scraper.groovy'

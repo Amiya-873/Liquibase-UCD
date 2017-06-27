@@ -19,7 +19,7 @@
 	</related-info>
 
       <!-- Do not change the release-version, the build process injects it. -->
-      <release-version>#RELEASE_VERSION#</release-version>
+      <release-version>2.@RELEASE_VERSION@</release-version>
 
 	<release-notes>
 		<release-note plugin-version="1">
