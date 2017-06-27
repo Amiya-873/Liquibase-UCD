@@ -45,6 +45,7 @@ defaultTasks 'distPlugin'
 
 def buildLocaleDir = 'build/locale'
 def buildUtilDir   = 'build/util'
+def travisCommit   = project.hasProperty('travisCommit') ? project.getProperty('travisCommit') : ''
 
 configurations {
     // Remove the groovy-all jar from runtime dependencies
@@ -127,10 +128,11 @@ task copyi18n(type: Copy) {
 }
 
 task distPlugin(type: Zip, dependsOn: ['compileGroovy', 'gatherI18n']) {
-
+    // Need a better way to get version. Ideally from plugin.xml parsing
+    def version = "2." + travisCommit
     from(sourceSets.zip.groovy.srcDirs) {
         if (travisCommit) {
-            filter(ReplaceTokens, tokens: [RELEASE_VERSION: travisCommit])
+            filter(ReplaceTokens, tokens: [RELEASE_VERSION: version])
         }
     }
     into('lib') {
@@ -147,7 +149,11 @@ task distPlugin(type: Zip, dependsOn: ['compileGroovy', 'gatherI18n']) {
         from sourceSets.classes.groovy.srcDirs
         exclude 'META-INF', 'i18n-scraper.groovy'
     }
-    archiveName = "${pluginName}-dev.zip"
+    if (travisCommit) {
+        archiveName = "${pluginName}-${version}.zip"
+    } else {
+        archiveName = "${pluginName}-dev.zip"
+    }
 }
 
 task gatherI18n(type: JavaExec) {
