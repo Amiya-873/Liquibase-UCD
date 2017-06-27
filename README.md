@@ -1,4 +1,4 @@
-# Liquibase plug-in for IBM UrbanCode Deploy
+# Liquibase plug-in for IBM UrbanCode Deploy [![Build Status](https://travis-ci.org/IBM-UrbanCode/Liquibase-UCD.svg?branch=master)](https://travis-ci.org/IBM-UrbanCode/Liquibase-UCD)
 ---
 Note: This is not the plug-in distributable! This is the source code. To find the installable plug-in, go to the plug-in page on the [IBM UrbanCode Plug-ins microsite](https://developer.ibm.com/urbancode/plugins).
 
