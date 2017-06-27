@@ -16,6 +16,9 @@ jdk:
 notifications:
   slack:
     secure: TbFrz0KNGL9TpKuFJFwthl06g/loFS9fWUPiVapf09hye7wrhDxqjHeoTLe+lllGYxHDkP4qqzSTovwVtvX9Lq2KExv1uDsXUUPYubO8R6USwM0lKSbCulv5TEgrBWfRQeo0dYV/xsmF5Z4ooH7q756vCAgcqDaHmKcE3QUas31QLG3EGbauUVvxC31/lyLPIolox25ilf+3cf9xULRWUKtnNaKoJ7D/5YCFA4+x3MW/19krA92UNOrku36NWknVFNyPABUHz2PAzdEkHhhJo1tMjQJ2JUiS+vRpS6Q+osd5lw3IMy4kB5BzujVg7fwiw0majKmLV7kphgpojWXzasV3rGB/RPa/n22OA2CDK0+9f7+m/u93lnOE7KprTs0Rcth0C0OhLUjnFy4orm6B5Zw1Fso8N8DUXYr2QhVxG4Iqm39hypuUtMJ6rnrwc5Fs2h0GI32t6FuWqwWEh1QS3R9A+LKF0rFwROcxDN715Ln3JSdVd274wSJlEhBupGS7O5wSKVkORMcUF6rKbv0pdZfceGkJ8PGkGKx0E1OaJ3vb/3ACH1XzhEghDbaJZCjU7vSdD9sch+ujjXhHP7Isp1Hoi2svFD/OrRFWPerSq4WS5AGQv6lEjSpzhAiQDNY0+iep3JFGkBtF2/pgrxIDyjFuGjZQ3M96HXzpnUn07r0=
+    on_success: change
+    on_failure: change
+  email: false
 deploy:
   provider: releases
   api_key:
