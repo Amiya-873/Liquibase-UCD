@@ -26,7 +26,7 @@ public class AirPluginToolNew {
 
     def outProps;
 
-    public AirPluginTool(def inFile, def outFile){
+    public AirPluginToolNew(def inFile, def outFile){
         inPropsFile = inFile;
         outPropsFile = outFile;
         outProps = new Properties();
