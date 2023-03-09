@@ -28,5 +28,8 @@
 		<release-note plugin-version="2">
             Initial GitHub release.
 		</release-note>
+		<release-note plugin-version="3">
+            Groovy Upgrade fix.
+		</release-note>
 	</release-notes>
 </pluginInfo>
