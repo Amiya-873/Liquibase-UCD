@@ -5,7 +5,7 @@
   * U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
   */
 
-import com.urbancode.air.AirPluginTool
+import com.urbancode.air.plugin.helpers.AirPluginTool
 
 def apTool = new AirPluginTool(this.args[0], this.args[1])
 
