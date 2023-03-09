@@ -16,7 +16,7 @@ public class AirPluginToolNew {
     // INSTANCE
     //**************************************************************************
 
-    final public def isWindows = (System.getProperty('os.name') =~ /(?i)windows/).find()
+    public def isWindows = (System.getProperty('os.name') =~ /(?i)windows/).find()
 
     def out = System.out;
     def err = System.err;
