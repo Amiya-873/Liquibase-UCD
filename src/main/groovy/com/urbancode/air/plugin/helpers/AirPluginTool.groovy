@@ -6,7 +6,7 @@
  */
 package com.urbancode.air.plugin.helpers
 
-public class AirPluginTool {
+public class AirPluginToolNew {
 
     //**************************************************************************
     // CLASS
