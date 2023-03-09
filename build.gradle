@@ -90,6 +90,11 @@ compileJava {
     dependsOn 'extractGPU', 'copyi18n'
 }
 
+compileGroovy {
+    include "i18n-scraper.groovy"
+}
+
+
 task copyDeps(type: Copy) {
     into 'lib'
     copy {
