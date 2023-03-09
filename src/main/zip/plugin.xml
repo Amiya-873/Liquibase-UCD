@@ -7,7 +7,7 @@
 -->
 <plugin xmlns="http://www.urbancode.com/PluginXMLSchema_v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<header>
-		<identifier id="com.urbancode.air.plugin.Liquibase" version="2" name="Liquibase"/>
+		<identifier id="com.urbancode.air.plugin.Liquibase" version="3" name="Liquibase"/>
 		<description>The Liquibase plugin allows you to automate the use of the Liquibase tool within your deploy processes</description>
 		<tag>Database/Liquibase</tag>
 	</header>
