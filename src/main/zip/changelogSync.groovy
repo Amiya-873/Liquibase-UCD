@@ -5,9 +5,9 @@
   * U.S. Government Users Restricted Rights:  Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
   */
 
-import com.urbancode.air.plugin.helpers.AirPluginTool
+import com.urbancode.air.plugin.helpers.AirPluginToolNew
 
-def apTool = new AirPluginTool(this.args[0], this.args[1])
+def apTool = new AirPluginToolNew(this.args[0], this.args[1])
 
 final def workDir = new File('.').canonicalFile
 final def props = apTool.getStepProperties()
